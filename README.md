@@ -1,4 +1,5 @@
 # minitwit-nodejs
+Test.
 An example of a basic structure for the minitwit application using Node.js
 
 ## How to setup server: (all from app root) (this is only done once)
