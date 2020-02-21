@@ -12,7 +12,6 @@ jobs:
       - run: npm install
 #     - run: npm test
 workflows:
-  version: 2.1
   branches:
    only:
      - releases
