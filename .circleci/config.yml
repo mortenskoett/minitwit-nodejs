@@ -8,13 +8,9 @@ jobs:
     steps:
       - checkout
       - node/with-cache:
-    steps:
-      - run: npm install
-#     - run: npm test
+          steps:
+            - run: npm install
 workflows:
-  branches:
-   only:
-     - releases
-  build-and-test:
-    jobs:
-      - build-and-test
+    build-and-test:
+      jobs:
+        - build-and-test
