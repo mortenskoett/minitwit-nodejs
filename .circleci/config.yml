@@ -10,7 +10,16 @@ jobs:
       - node/with-cache:
           steps:
             - run: npm install
+  deploy:
+    executor:
+      name: node/default
+    steps:
+      - run: echo "I deployed"
+
 workflows:
     build-and-test:
       jobs:
         - build-and-test
+    deploy:
+      jobs:
+        - deploy
